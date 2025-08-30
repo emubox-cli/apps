@@ -1,0 +1,35 @@
+{
+        "name": "Dolphin Emulator",
+        "id": "dolphin-emu",
+        "consoles": ["gc", "wii"],
+        "srmParsers": ["Dolphin - Gamecube", "Dolphin - Wii"],
+        "postInstall": {
+            "makeDirs": [
+                "<config>/dolphin-emu",
+                "<save>/dolphin-emu/GC/USA",
+                "<save>/dolphin-emu/GC/EUR",
+                "<save>/dolphin-emu/GC/JPN",
+                "<save>/dolphin-emu/GC/JAP",
+                "<save>/dolphin-emu/Wii"
+            ],
+            "makeFiles": [{
+                "path": "<config>/dolphin-emu/Dolphin.ini",
+                "content": {
+                    "Core": {
+                        "GCIFolderAPath": "<save>/dolphin-emu/GC"
+                    },
+                    "General": {
+                        "NANDRootPath": "<save>/dolphin-emu/Wii"
+                    }
+                }
+            }]
+        },
+        "installOptions": {
+            "flatpak": "org.DolphinEmu.dolphin-emu",
+            "aur": "dolphin-emu-git",
+            "aurExportName": "dolphin-emu",
+            "libretroCore": "dolphin",
+            "gitRepo": "pkgforge-dev/Dolphin-emu-AppImage",
+            "gitRe": "Dolphin_Emulator-.*-anylinux.squashfs-x86_64.AppImage"
+        }
+    }

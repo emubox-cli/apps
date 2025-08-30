@@ -1,0 +1,29 @@
+{
+    "name": "Rosalie's Mupen GUI",
+    "id": "rmg",
+    "consoles": ["n64"],
+    "postInstall": {
+        "makeDirs": [
+            "<config>/RMG",
+            "<save>/rmg/saves",
+            "<save>/rmg/states"
+            
+        ],
+        "makeFiles": [{
+            "path": "<config>/RMG/mupen64plus.cfg",
+            "content": {
+                "Core": {
+                    "SaveSRAMPath": "\"<save>/rmg/saves\"",
+                    "SavesStatePath": "\"<save>/rmg/states\""
+                }
+            }
+        }]
+    },
+    "installOptions": {
+        "flatpak": "com.github.Rosalie241.RMG",
+        "aur": "rmg-git",
+        "aurExportName": "RMG",
+        "gitRepo": "rosalie241/rmg",
+        "gitRe": "RMG-Portable-Linux64-v.*.AppImage"
+    }
+}

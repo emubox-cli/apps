@@ -1,0 +1,11 @@
+{
+    "name": "Azahar",
+    "id": "azahar",
+    "consoles": ["3ds"],
+    "installOptions": {
+        "aur": "azahar-git",
+        "aurExportName": "azahar",
+        "gitRepo": "azahar-emu/azahar",
+        "gitRe": "azahar.AppImage"
+    }
+}

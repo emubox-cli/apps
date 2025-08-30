@@ -1,0 +1,13 @@
+{
+    "name": "PPSSPP",
+    "id": "ppsspp",
+    "consoles": ["psp"],
+    "installOptions": {
+        "flatpak": "org.ppsspp.PPSSPP",
+        "aur": "ppsspp-git",
+        "aurExportName": "PPSSPPSDL",
+        "libretroCore": "ppsspp",
+        "gitRepo": "pkgforge-dev/PPSSPP-AppImage",
+        "gitRe": "ppsspp-.*-anylinux-x86_64.AppImage"
+    }
+}

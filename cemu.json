@@ -1,0 +1,11 @@
+{
+    "name": "Cemu",
+    "id": "cemu",
+    "consoles": ["wiiu"],
+    "installOptions": {
+        "aur": "cemu-git",
+        "aurExportName": "Cemu",
+        "gitRepo": "cemu-project/Cemu",
+        "gitRe": "Cemu-.*-x86_64.AppImage"
+    }
+}

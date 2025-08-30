@@ -1,0 +1,9 @@
+{
+    "name": "Ryujinx (Ryubing)",
+    "id": "ryujinx",
+    "consoles": ["switch"],
+    "installOptions": {
+        "aur": "ryujinx-git",
+        "aurExportName": "ryujinx"
+    }
+}

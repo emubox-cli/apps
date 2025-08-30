@@ -1,0 +1,29 @@
+{
+    "name": "mGBA",
+    "id": "mgba",
+    "consoles": ["gba"],
+    "postInstall": {
+        "makeDirs": [
+            "<config>/mgba",
+            "<save>/mgba/saves",
+            "<save>/mgba/states"
+        ], 
+        "makeFiles": [{
+            "path": "<config>/mgba/config.ini",
+            "content": {
+                "ports.qt": {
+                    "savegamePath": "<save>/mgba/saves",
+                    "savestatePath": "<save>/mgba/states"
+                }
+            }
+        }]
+    },
+    "installOptions": {
+        "flatpak": "io.mgba.mGBA",
+        "aur": "mgba-qt-git",
+        "aurExportName": "mgba-qt",
+        "gitRepo": "mgba-emu/mgba",
+        "gitRe": "mGBA-.*-appimage-x64.appimage",
+        "libretroCore": "mgba"
+    }
+}

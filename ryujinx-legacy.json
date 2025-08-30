@@ -1,0 +1,8 @@
+{
+    "name": "Ryujinx (Legacy)",
+    "id": "ryujinx-legacy",
+    "consoles": ["switch"],
+    "installOptions": {
+        "manual": true
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "DuckStation",
+    "id": "duckstation",
+    "consoles": ["psx"],
+    "installOptions": {
+        "flatpak": "org.duckstation.DuckStation",
+        "aur": "duckstation-git",
+        "aurExportName": "duckstation",
+        "gitRepo": "stenzek/duckstation",
+        "gitRe": "DuckStation-x64.AppImage"
+    }
+}

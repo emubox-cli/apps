@@ -1,0 +1,26 @@
+{
+    "name": "Yuzu (Legacy)",
+    "id": "yuzu",
+    "consoles": ["switch"],
+    "postInstall": {
+        "makeDirs": [
+            "<config>/<id>",
+            "<save>/<id>/nand",
+            "<save>/<id>/sdmc"
+        ],
+        "makeFiles": [
+            {
+                "path": "<config>/<id>/qt-config.ini",
+                "content": {
+                    "Data%20Storage": {
+                        "nand_directory": "<save>/<id>/nand",
+                        "sdmc_directory": "<save>/<id>/sdmc"
+                    }
+                }
+            }
+        ]
+    },
+    "installOptions": {
+        "manual": true
+    }
+}

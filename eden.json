@@ -1,0 +1,11 @@
+{
+    "extends": "yuzu",
+    "name": "Eden",
+    "id": "eden",
+    "installOptions": {
+        "aur": "eden-git",
+        "aurExportName": "eden",
+        "gitRepo": "eden-emulator/Releases",
+        "gitRe": "Eden-Linux-.*-.*-amd64.AppImage"
+    }
+}

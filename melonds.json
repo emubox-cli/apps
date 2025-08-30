@@ -1,0 +1,31 @@
+{
+    "name": "MelonDS",
+    "id": "melonds",
+    "consoles": ["nds"],
+    "postInstall": {
+        "makeDirs": [
+            "<config>/melonDS",
+            "<save>/melonds/saves",
+            "<save>/melonds/states"
+        ],
+        
+        "makeFiles": [{
+            "path": "<config>/melonDS/melonDS.toml",
+            "content": {
+                "Instance0": {
+                    "SaveFilePath": "\"<save>/melonds/saves\"",
+                    "SavestatePath": "\"<save>/melonds/saves\""
+                }
+            }
+        }]
+    },
+    "installOptions": {
+        "flatpak": "net.kuribo64.melonDS",
+        "aur": "melonds-git",
+        "aurExportName": "melonDS",
+        "gitRepo": "melonds-emu/melonds",
+        "gitRe": "melonDS-appimage-x86_64.zip",
+        "unzipTarget": "melonDS-x86_64.AppImage",
+        "libretroCore": "melonds"
+    }
+}

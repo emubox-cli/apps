@@ -1,0 +1,11 @@
+{
+    "extends": "yuzu",
+    "name": "Torzu",
+    "id": "torzu",
+    "installOptions": {
+        "aur": "torzu-git",
+        "aurExportName": "torzu",
+        "gitRepo": "pkgforge-dev/Torzu-AppImage",
+        "gitRe": "Torzu-.*-anylinux-x86_64_v3.AppImage"
+    }
+}
