@@ -1,9 +1,9 @@
 import { writeFile, readFile } from "fs/promises";
 import { $ } from "bun";
 
-await $`rm -f ./dist/list.md`;
+await $`rm -f ./dist/README.md`;
 await $`cp -r icons dist`;
-await $`cp -r apps dist`
+await $`cp -r apps/* dist`
 const data = require("./dist/apps.json")
 
 const listFile = await (await readFile("./template/header.md")).toString();
