@@ -15,7 +15,6 @@ const manualTemplate = await (await readFile("./template/badges/manual.txt")).to
 const nameMap = require("./template/name-map.json");
 
 let mdData = listFile
-await $`cat ./template/header.md >> ./dist/list.md`;
 for (const i of data.a) {
     const op = require(`./apps/${i.i}.json`);
     const finalData = listTemplate
@@ -30,4 +29,4 @@ for (const i of data.a) {
 }
 
 
-await writeFile("./dist/list.md", mdData);
+await writeFile("./dist/README.md", mdData);
