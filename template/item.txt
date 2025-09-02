@@ -1,1 +1,1 @@
-<img width="25" style="margin-top:-2px;margin-right:10px;float:left;" src="/apps/icons/$$ID.png"> **$$NAME** | `emubox i $$ID` | $$CONSOLES | <div style="display:grid;place-items:center">$$AUR$$FLATHUB$$APPIMAGE$$MANUAL</div>
+<img width="25" style="margin-top:-2px;margin-right:10px;float:left;" src="/apps/icons/$$ID.png"> **$$NAME** | `emubox i $$ID` | $$CONSOLES | $$AUR$$FLATHUB$$APPIMAGE$$MANUAL
