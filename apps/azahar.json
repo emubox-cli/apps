@@ -1,6 +1,5 @@
 {
     "name": "Azahar",
-    "id": "azahar",
     "consoles": ["3ds"],
     "installOptions": {
         "aur": "azahar-git",

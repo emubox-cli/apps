@@ -1,6 +1,5 @@
 {
     "name": "Yuzu (Legacy)",
-    "id": "yuzu",
     "consoles": ["switch"],
     "postInstall": {
         "makeDirs": [

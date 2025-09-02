@@ -1,6 +1,5 @@
 {
     "name": "MelonDS",
-    "id": "melonds",
     "consoles": ["nds"],
     "postInstall": {
         "makeDirs": [

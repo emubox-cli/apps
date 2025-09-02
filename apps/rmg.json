@@ -1,6 +1,5 @@
 {
     "name": "Rosalie's Mupen GUI",
-    "id": "rmg",
     "consoles": ["n64"],
     "postInstall": {
         "makeDirs": [

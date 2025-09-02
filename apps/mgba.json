@@ -1,6 +1,5 @@
 {
     "name": "mGBA",
-    "id": "mgba",
     "consoles": ["gba"],
     "postInstall": {
         "makeDirs": [

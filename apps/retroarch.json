@@ -1,6 +1,5 @@
 {
     "name": "Retroarch",
-    "id": "retroarch",
     "consoles": ["#util"],
     "installOptions": {
         "flatpak": "org.libretro.RetroArch",

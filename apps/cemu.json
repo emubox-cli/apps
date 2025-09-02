@@ -1,6 +1,5 @@
 {
     "name": "Cemu",
-    "id": "cemu",
     "consoles": ["wiiu"],
     "installOptions": {
         "aur": "cemu-git",

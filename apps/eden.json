@@ -1,7 +1,6 @@
 {
     "extends": "yuzu",
     "name": "Eden",
-    "id": "eden",
     "installOptions": {
         "aur": "eden-git",
         "aurExportName": "eden",

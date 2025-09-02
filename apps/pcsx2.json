@@ -1,6 +1,5 @@
 {
     "name": "PCSX2",
-    "id": "pcsx2",
     "consoles": ["ps2"],
     "installOptions": {
         "flatpak": "net.pcsx2.PCSX2",

@@ -1,6 +1,5 @@
 {
     "name": "PPSSPP",
-    "id": "ppsspp",
     "consoles": ["psp"],
     "installOptions": {
         "flatpak": "org.ppsspp.PPSSPP",

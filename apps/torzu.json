@@ -1,7 +1,6 @@
 {
     "extends": "yuzu",
     "name": "Torzu",
-    "id": "torzu",
     "installOptions": {
         "aur": "torzu-git",
         "aurExportName": "torzu",

@@ -1,6 +1,5 @@
 {
     "name": "Snes9x",
-    "id": "snes9x",
     "consoles": ["snes"],
     "postInstall": {
         "makeDirs": [

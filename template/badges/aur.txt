@@ -1,0 +1,1 @@
+<a href="https://aur.archlinux.org/packages/$$AUR"><img src="https://img.shields.io/badge/AUR-$$AUR-blue?logo=archlinux&logoColor=f5f5f5"></a>

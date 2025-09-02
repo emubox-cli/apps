@@ -1,6 +1,5 @@
 {
     "name": "RPCS3",
-    "id": "rpcs3",
     "consoles": ["ps3"],
     "installOptions": {
         "flatpak": "net.rpcs3.RPCS3",

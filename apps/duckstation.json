@@ -1,6 +1,5 @@
 {
     "name": "DuckStation",
-    "id": "duckstation",
     "consoles": ["psx"],
     "installOptions": {
         "flatpak": "org.duckstation.DuckStation",
