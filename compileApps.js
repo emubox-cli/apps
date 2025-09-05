@@ -2,7 +2,7 @@ import { readFile, writeFile, readdir } from "fs/promises";
 import { $ } from "bun";
 
 const data = {
-    v: await (await $`curl https://emubox.pupper.space/latest`.quiet()).text().split("\n").shift(),
+    v: process.argv[2],
     a: []
 }
 
@@ -37,3 +37,4 @@ for (const i of appList) {
 
 await $`mkdir -p dist`;
 await writeFile("./dist/apps.json", JSON.stringify(data));
+await writeFile("./dist/latest", process.argv[2])
