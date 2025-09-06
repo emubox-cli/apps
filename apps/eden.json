@@ -5,6 +5,6 @@
         "aur": "eden-git",
         "aurExportName": "eden",
         "gitRepo": "eden-emulator/Releases",
-        "gitRe": "Eden-Linux-.*-.*-amd64.AppImage"
+        "gitRe": "Eden-Linux-v.*-amd64.AppImage"
     }
 }
