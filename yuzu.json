@@ -1,6 +1,7 @@
 {
     "name": "Yuzu",
     "consoles": ["switch"],
+    "gameExec": "-f -g {}",
     "postInstall": {
         "makeDirs": [
             "<config>/<id>",
