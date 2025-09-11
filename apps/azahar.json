@@ -1,6 +1,7 @@
 {
     "name": "Azahar",
     "consoles": ["3ds"],
+    "gameExec": "{}",
     "installOptions": {
         "aur": "azahar-git",
         "aurExportName": "azahar",

@@ -1,6 +1,7 @@
 {
     "name": "mGBA",
     "consoles": ["gba"],
+    "gameExec": "-f {}",
     "postInstall": {
         "makeDirs": [
             "<config>/mgba",

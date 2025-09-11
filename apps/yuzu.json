@@ -1,6 +1,7 @@
 {
     "name": "Yuzu (Legacy)",
     "consoles": ["switch"],
+    "gameExec": "-f -g {}",
     "postInstall": {
         "makeDirs": [
             "<config>/<id>",

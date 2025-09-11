@@ -1,6 +1,7 @@
 {
     "name": "Snes9x",
     "consoles": ["snes"],
+    "gameExec": "{}",
     "postInstall": {
         "makeDirs": [
             "<config>/snes9x",

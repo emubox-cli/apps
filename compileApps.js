@@ -20,7 +20,8 @@ for (const i of appList) {
         n: appData.name,
         i: i.split(".").shift(),
         c: appData.consoles,
-        o: []
+        o: [],
+        e: appData.gameExec
     }
 
     if (appData.installOptions.gitRepo)
