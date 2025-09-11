@@ -1,5 +1,5 @@
 {
-    "name": "Yuzu (Legacy)",
+    "name": "Yuzu",
     "consoles": ["switch"],
     "gameExec": "-f -g {}",
     "postInstall": {
