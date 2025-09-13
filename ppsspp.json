@@ -1,6 +1,7 @@
 {
     "name": "PPSSPP",
     "consoles": ["psp"],
+    "gameExec": "-f {}",
     "installOptions": {
         "flatpak": "org.ppsspp.PPSSPP",
         "aur": "ppsspp-git",

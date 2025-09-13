@@ -1,6 +1,7 @@
 {
     "name": "RPCS3",
     "consoles": ["ps3"],
+    "gameExec": "--no-gui {}",
     "installOptions": {
         "flatpak": "net.rpcs3.RPCS3",
         "aur": "rpcs3-git",
