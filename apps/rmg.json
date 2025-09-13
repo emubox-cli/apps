@@ -1,6 +1,7 @@
 {
     "name": "Rosalie's Mupen GUI",
     "consoles": ["n64"],
+    "gameExec": "-f {}",
     "postInstall": {
         "makeDirs": [
             "<config>/RMG",

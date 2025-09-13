@@ -1,6 +1,7 @@
 {
     "name": "PCSX2",
     "consoles": ["ps2"],
+    "gameExec": "-fullscreen -- {}",
     "installOptions": {
         "flatpak": "net.pcsx2.PCSX2",
         "aur": "pcsx2-git",

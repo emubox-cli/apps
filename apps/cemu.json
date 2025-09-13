@@ -1,6 +1,7 @@
 {
     "name": "Cemu",
     "consoles": ["wiiu"],
+    "gameExec": "-g {}",
     "installOptions": {
         "aur": "cemu-git",
         "aurExportName": "Cemu",
