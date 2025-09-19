@@ -1,0 +1,70 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "$id": "https://emubox-cli.github.io/apps/_schema.json",
+    "title": "Emubox App",
+    "description": "Linux app data for an emulator",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "Name of application",
+            "type": "string"
+        },
+        "consoles": {
+            "description": "List of consoles the app supports.\n\nPlease confirm your console name matches one of the following: https://github.com/emubox-cli/app/blob/4ec7e910d78b05b2413ab825bc9413de9354596b/src/utils/apps.ts#L4",
+            "type": "array"
+        }, 
+        "gameExec": {
+            "description": "String of arguments to run a game in this emulator in fullscreen (or just run it)\n\nuse `{}` in place of the rom path",
+            "type": "string"
+        },
+        "postInstall": {
+            "description": "Files and directories to initialize after install.\n\nPlaceholders:\n<save> = `~/.emubox/saves`\n<config> = `~/.emubox/.config`\n",
+            "type": "object",
+            "properties": {
+                "makeDirs": {
+                    "description": "List of directories to make.",
+                    "type": "array"
+                },
+                "makeFiles": {
+                    "description": "List of files to make, along with their content.\nEmubox will automatically convert any json input into the correct file-type.",
+                    "type": "array",
+                    "properties": {
+                        "path": {
+                            "description": "Path to file, suffix will be used to determine how file content will be formatted",
+                            "type": "string"
+                        },
+                        "content": {
+                            "description": "File contents in json format.",
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        "installOptions": {
+            "required": [],
+            "properties": {
+                "aur": {
+                    "description": "The AUR repo this emulator can be installed at.",
+                    "type": "string"
+                },
+                "aurExportName": {
+                    "description": "The app name for `distrobox-export`, necessary if it differs from the AUR install name.",
+                    "type": "string"
+                },
+                "flatpak": {
+                    "description": "The flatpak id this emulator can be installed at.",
+                    "type": "string"
+                },
+                "gitRepo": {
+                    "description": "The `<repo>/<name>` this emulator has releases at on github.",
+                    "type": "string"
+                },
+                "gitRe": {
+                    "description": "The regex string to search for a release asset under.",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
