@@ -8,6 +8,8 @@ const data = {
 
 let appList = await readdir("./apps")
 for (const i of appList) {
+    if (i == "_schema.json")
+        continue;
     const lol = await readFile(`./apps/${i}`);
     let appData = JSON.parse(await lol.toString());
 
