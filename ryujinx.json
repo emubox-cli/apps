@@ -5,6 +5,7 @@
         "flatpak": "io.github.ryubing.Ryujinx",
         "aur": "ryujinx-git",
         "aurExportName": "ryujinx",
+        "gitRepo": "ryubing/ryujinx",
         "gitRe": "ryujinx-*.-x64.AppImage"
     }
 }
