@@ -2,7 +2,9 @@
     "name": "Ryujinx (Ryubing)",
     "consoles": ["switch"],
     "installOptions": {
+        "flatpak": "io.github.ryubing.Ryujinx",
         "aur": "ryujinx-git",
-        "aurExportName": "ryujinx"
+        "aurExportName": "ryujinx",
+        "gitRe": "ryujinx-*.-x64.AppImage"
     }
 }
