@@ -1,1 +1,1 @@
-<img width="25" style="margin-top:-2px;margin-right:10px;float:left;" src="/apps/icons/$$ID.png"> **$$NAME** | `emubox i $$ID` | $$CONSOLES | $$AUR$$FLATHUB$$APPIMAGE$$MANUAL
+<img width="25" style="margin-top:-2px;margin-right:10px;float:left;" src="https://github.com/emubox-cli/apps/blob/main/icons/$$ID.png?raw=true"> **$$NAME** | `emubox i $$ID` | $$CONSOLES | $$AUR$$FLATHUB$$APPIMAGE$$MANUAL
