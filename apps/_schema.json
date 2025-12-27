@@ -17,6 +17,10 @@
             "description": "String of arguments to run a game in this emulator in fullscreen (or just run it)\n\nuse `{}` in place of the rom path",
             "type": "string"
         },
+        "romQuery": {
+            "description": "Regex string to match rom names for their consoles.",
+            "type": "string"
+        },
         "postInstall": {
             "description": "Files and directories to initialize after install.\n\nPlaceholders:\n<save> = `~/.emubox/saves`\n<config> = `~/.emubox/.config`\n",
             "type": "object",
