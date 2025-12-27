@@ -21,6 +21,7 @@ jobs:
               run: |
                 bun compileApps.js ${{ github.sha }}
                 bun makeListfile.js
+                cp dist/README.md ./README.md
 
             - name: Push to Dist
               uses: s0/git-publish-subdir-action@develop
@@ -30,4 +31,14 @@ jobs:
                 FOLDER: dist
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                 MESSAGE: "[`{sha}`] {msg}"
+            - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
+              with:
+
+                add: 'src'
+                cwd: '.'
+                fetch: false
+                message: 'updated readme'
+                pathspec_error_handling: ignore
+                pull: ''
+                push: true
          
