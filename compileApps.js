@@ -23,7 +23,8 @@ for (const i of appList) {
         i: i.split(".").shift(),
         c: appData.consoles,
         o: [],
-        e: appData.gameExec
+        e: appData.gameExec,
+        r: appData.romQuery
     }
 
     if (appData.installOptions.gitRepo)
