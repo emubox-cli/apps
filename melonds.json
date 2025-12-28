@@ -1,6 +1,8 @@
 {
     "name": "MelonDS",
     "consoles": ["nds"],
+    "gameExec": "-f {}",
+    "romQuery": ".*(.7z|.7Z|.nds|.NDS|.zip|.ZIP)",
     "postInstall": {
         "makeDirs": [
             "<config>/melonDS",

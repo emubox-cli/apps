@@ -2,6 +2,7 @@
     "name": "mGBA",
     "consoles": ["gba"],
     "gameExec": "-f {}",
+    "romQuery": ".*(.7z|.7Z|.gba|.GBA|.zip|.ZIP)",
     "postInstall": {
         "makeDirs": [
             "<config>/mgba",

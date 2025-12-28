@@ -1,7 +1,9 @@
 {
+    "$schema": "./_schema.json",
     "name": "PCSX2",
     "consoles": ["ps2"],
     "gameExec": "-fullscreen -- {}",
+    "romQuery": ".*(.bin|.BIN|.chd|.CHD|.cso|.CSO|.dump|.DUMP|.gz|.GZ|.img|.IMG|.iso|.ISO|.mdf|.MDF|.nrg|.NRG)",
     "installOptions": {
         "flatpak": "net.pcsx2.PCSX2",
         "aur": "pcsx2-git",

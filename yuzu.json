@@ -2,6 +2,7 @@
     "name": "Yuzu",
     "consoles": ["switch"],
     "gameExec": "-f -g {}",
+    "romQuery": ".*(.kip|.KIP|.nca|.NCA|.nro|.NRO|.nso|.NSO|.nsp|.NSP|.xci|.XCI)",
     "postInstall": {
         "makeDirs": [
             "<config>/<id>",

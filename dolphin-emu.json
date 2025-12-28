@@ -1,8 +1,8 @@
 {
         "name": "Dolphin Emulator",
         "consoles": ["gc", "wii"],
-        "srmParsers": ["Dolphin - Gamecube", "Dolphin - Wii"],
         "gameExec": "-b -e {}",
+        "romQuery": ".*(.ciso|.CISO|.dol|.DOL|.elf|.ELF|.gcm|.GCM|.gcz|.GCZ|.iso|.ISO|.nkit.iso|.NKIT.ISO|.rvz|.RVZ|.wad|.WAD|.wia|.WIA)",
         "postInstall": {
             "makeDirs": [
                 "<config>/dolphin-emu",

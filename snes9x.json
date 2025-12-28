@@ -2,6 +2,7 @@
     "name": "Snes9x",
     "consoles": ["snes"],
     "gameExec": "{}",
+    "romQuery": ".*(.smc|.SMC|.sfc|.SFC|.swc|.SWC)",
     "postInstall": {
         "makeDirs": [
             "<config>/snes9x",
