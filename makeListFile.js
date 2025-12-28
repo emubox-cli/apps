@@ -25,8 +25,7 @@ for (const i of data.a) {
         .replaceAll("$$FLATHUB", i.o.includes("f") ? flathubTemplate.replaceAll("$$F_ID", op.installOptions.flatpak.replaceAll("-", "\u2013")) : "")
         .replaceAll("$$APPIMAGE", i.o.includes("g") ? appimageTemplate.replaceAll("$$REPO", op.installOptions.gitRepo.replaceAll("-", "\u2013")) : "")
         .replaceAll("$$MANUAL", i.o.includes("m") ? manualTemplate : "")
-    mdData += `${finalData}\n`;
+    mdData += `${finalData}`;
 }
-
 
 await writeFile("./dist/README.md", mdData);
