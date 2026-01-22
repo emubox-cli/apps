@@ -4,7 +4,24 @@
     "title": "Emubox App",
     "description": "Linux app data for an emulator",
     "type": "object",
+    "if": {
+        "contains": {
+            "properties": {
+                "extends": { "type": "string" }
+            }
+        }
+    },
+    "then": {
+        "required": ["name", "installOptions", "$schema"]
+    },
+    "else": {
+        "required": ["name", "consoles", "gameExec", "romQuery", "postInstall", "$schema"]
+    },
     "properties": {
+        "extends": {
+            "description": "Name of other app file to pull base info from.\nThis exists because of Yuzu and Ryujinx having various revival forks.",
+            "type": "string"
+        },
         "name": {
             "description": "Name of application",
             "type": "string"
@@ -22,9 +39,14 @@
             "type": "string"
         },
         "postInstall": {
-            "description": "Files and directories to initialize after install.\n\nPlaceholders:\n<save> = `~/.emubox/saves`\n<config> = `~/.emubox/.config`\n",
+            "description": "Files and directories to initialize after install.\n\nPlaceholders:\n<save> = `$HOME/.emubox/saves`\n<config> = `$HOME/.emubox/.config`\n<share> = `$HOME/.emubox/.local/share`",
+            "required": ["makeLinks", "makeDirs", "makeFiles"],
             "type": "object",
             "properties": {
+                "makeLinks": {
+                    "description": "Object of paths to make symlinks for; Key is where the link will be made, Value is the reference path.",
+                    "type": "object"
+                },
                 "makeDirs": {
                     "description": "List of directories to make.",
                     "type": "array"
@@ -32,6 +54,7 @@
                 "makeFiles": {
                     "description": "List of files to make, along with their content.\nEmubox will automatically convert any json input into the correct file-type.",
                     "type": "array",
+                    "required": ["path", "content"],
                     "properties": {
                         "path": {
                             "description": "Path to file, suffix will be used to determine how file content will be formatted",

@@ -6,5 +6,6 @@
         "aurExportName": "eden",
         "gitRepo": "eden-emulator/Releases",
         "gitRe": "Eden-Linux-v.*-rc.*-amd64-gcc-standard.AppImage"
-    }
+    },
+    "$schema": "_schema.json"
 }

@@ -4,6 +4,9 @@
         "gameExec": "-b -e {}",
         "romQuery": ".*(.ciso|.CISO|.dol|.DOL|.elf|.ELF|.gcm|.GCM|.gcz|.GCZ|.iso|.ISO|.nkit.iso|.NKIT.ISO|.rvz|.RVZ|.wad|.WAD|.wia|.WIA)",
         "postInstall": {
+            "makeLinks": {
+                "<mods>/<id>/Load": "<config>/dolphin-emu/Load"
+            },
             "makeDirs": [
                 "<config>/dolphin-emu",
                 "<save>/dolphin-emu/GC/USA",
@@ -31,5 +34,6 @@
             "libretroCore": "dolphin",
             "gitRepo": "pkgforge-dev/Dolphin-emu-AppImage",
             "gitRe": "Dolphin_Emulator-.*-anylinux.squashfs-x86_64.AppImage"
-        }
-    }
+        },
+        "$schema": "_schema.json"
+}

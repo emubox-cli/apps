@@ -1,9 +1,13 @@
 {
-    "$schema": "./_schema.json",
     "name": "PCSX2",
     "consoles": ["ps2"],
     "gameExec": "-fullscreen -- {}",
     "romQuery": ".*(.bin|.BIN|.chd|.CHD|.cso|.CSO|.dump|.DUMP|.gz|.GZ|.img|.IMG|.iso|.ISO|.mdf|.MDF|.nrg|.NRG)",
+    "postInstall": {
+        "makeLinks": {},
+        "makeDirs": [],
+        "makeFiles": []
+    },
     "installOptions": {
         "flatpak": "net.pcsx2.PCSX2",
         "aur": "pcsx2-git",
@@ -12,5 +16,6 @@
         "gitRepo": "pcsx2/pcsx2",
         "gitRe": "pcsx2-v.*-linux-appimage-x64-Qt.AppImage",
         "libretroCore": "pcsx2"
-    }
+    },
+    "$schema": "_schema.json"
 }

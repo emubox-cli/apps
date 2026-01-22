@@ -2,10 +2,17 @@
     "name": "Azahar",
     "consoles": ["3ds"],
     "gameExec": "{}",
+    "romQuery": ".*(.3dsx|.3DSX|.elf|.ELF|.axf|.AXF|.cci|.CCI|.app|.APP|.z3dsx|.Z3DSX|.zcci|.ZCCI|.zcxi|.ZCXI)",
+    "postInstall": {
+        "makeFiles": [],
+        "makeDirs": [],
+        "makeLinks": {}
+    },
     "installOptions": {
         "aur": "azahar-git",
         "aurExportName": "azahar",
         "gitRepo": "azahar-emu/azahar",
         "gitRe": "azahar.AppImage"
-    }
+    },
+    "$schema": "_schema.json"
 }
