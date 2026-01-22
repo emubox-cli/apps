@@ -4,6 +4,7 @@
     "gameExec": "-f -g {}",
     "romQuery": ".*(.kip|.KIP|.nca|.NCA|.nro|.NRO|.nso|.NSO|.nsp|.NSP|.xci|.XCI)",
     "postInstall": {
+        "makeLinks": {},
         "makeDirs": [
             "<config>/<id>",
             "<save>/<id>/nand",
@@ -16,6 +17,12 @@
                     "Data%20Storage": {
                         "nand_directory": "<save>/<id>/nand",
                         "sdmc_directory": "<save>/<id>/sdmc"
+                    },
+                    "UI": {
+                        "Paths\\gamedirs\\4\\path": "<roms>/switch",
+                        "Paths\\gamedirs\\4\\deep_scan": "true",
+                        "Paths\\gamedirs\\4\\path\\expanded": "true",
+                        "Paths\\gamedirs\\size": "4"
                     }
                 }
             }
@@ -23,5 +30,6 @@
     },
     "installOptions": {
         "manual": true
-    }
+    },
+    "$schema": "_schema.json"
 }

@@ -1,6 +1,16 @@
 import { readFile, writeFile, readdir } from "fs/promises";
 import { $ } from "bun";
+import { exit } from "process";
 
+const REQUIRED_KEYS = [
+    "name",
+    "consoles",
+    "gameExec",
+    "romQuery",
+    "postInstall",
+    "installOptions",
+    "$schema"
+]
 const data = {
     v: process.argv[2],
     a: []
@@ -11,12 +21,20 @@ for (const i of appList) {
     if (i == "_schema.json")
         continue;
     const lol = await readFile(`./apps/${i}`);
-    let appData = JSON.parse(await lol.toString());
+    let appData = JSON.parse(await lol.toString()); 
 
     if (appData.extends) {
         const extendo = JSON.parse(await $`cat ./apps/${appData.extends}.json`.text());
         appData = Object.assign(extendo, appData);
     }
+
+    for (const ii of REQUIRED_KEYS) {
+        if (appData[ii] === undefined) {
+            console.log(`${i}: missing required key "${ii}"`);
+            exit(1)
+        }
+    }
+    delete appData.$schema
 
     const minData = {
         n: appData.name,

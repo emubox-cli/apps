@@ -2,10 +2,17 @@
     "name": "Cemu",
     "consoles": ["wiiu"],
     "gameExec": "-g {}",
+    "romQuery": ".*(.wud|.WUD|.wux|.WUX|.wua|.WUA|.wuhb|.WUHB|.iso|.ISO|.rpx|.RPX|.elf|.ELF)",
+    "postInstall": {
+        "makeDirs": [],
+        "makeFiles": [],
+        "makeLinks": {}
+    },
     "installOptions": {
         "aur": "cemu-git",
         "aurExportName": "Cemu",
         "gitRepo": "cemu-project/Cemu",
         "gitRe": "Cemu-.*-x86_64.AppImage"
-    }
+    },
+    "$schema": "_schema.json"
 }

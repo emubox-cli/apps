@@ -4,6 +4,9 @@
     "gameExec": "-f {}",
     "romQuery": ".*(.7z|.7Z|.nds|.NDS|.zip|.ZIP)",
     "postInstall": {
+        "makeLinks": {
+            
+        },
         "makeDirs": [
             "<config>/melonDS",
             "<save>/melonds/saves",
@@ -28,5 +31,6 @@
         "gitRe": "melonDS-appimage-x86_64.zip",
         "unzipTarget": "melonDS-x86_64.AppImage",
         "libretroCore": "melonds"
-    }
+    },
+    "$schema": "_schema.json" 
 }

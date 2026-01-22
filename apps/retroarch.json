@@ -1,10 +1,18 @@
 {
     "name": "Retroarch",
     "consoles": ["#util"],
+    "gameExec": "{}",
+    "romQuery": ".*",
+    "postInstall": {
+        "makeLinks": {},
+        "makeDirs": [],
+        "makeFiles": []
+    },
     "installOptions": {
         "flatpak": "org.libretro.RetroArch",
         "aur": "retroarch-git",
         "aurExportName": "RetroArch",
         "aurExportTitle": "retroarch"
-    }
+    },
+    "$schema": "_schema.json"
 }
