@@ -9,6 +9,7 @@
         "makeLinks": {}
     },
     "installOptions": {
+        "flatpak": "info.cemu.Cemu",
         "aur": "cemu-git",
         "aurExportName": "Cemu",
         "gitRepo": "cemu-project/Cemu",
