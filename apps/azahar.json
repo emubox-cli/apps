@@ -9,7 +9,7 @@
         "makeLinks": {}
     },
     "installOptions": {
-        "flatpak": "org.azahar_emu.Azahar"
+        "flatpak": "org.azahar_emu.Azahar",
         "aur": "azahar-git",
         "aurExportName": "azahar",
         "gitRepo": "azahar-emu/azahar",
