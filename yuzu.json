@@ -29,6 +29,7 @@
         ]
     },
     "installOptions": {
+        "flatpak": "org.yuzu_emu.yuzu",
         "manual": true
     },
     "$schema": "_schema.json"
