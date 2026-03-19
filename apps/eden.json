@@ -2,7 +2,7 @@
     "extends": "yuzu",
     "name": "Eden",
     "installOptions": {
-        "flatpak": ""
+        "flatpak": "",
         "aur": "eden-git",
         "aurExportName": "eden",
         "gitRepo": "eden-emulator/Releases",
