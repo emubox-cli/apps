@@ -1,7 +1,7 @@
 {
     "name": "Ryujinx (Legacy)",
     "consoles": ["switch"],
-    "gameExec": "{}}",
+    "gameExec": "{}",
     "romQuery": ".*",
     "postInstall": {
         "makeLinks": {},
@@ -9,6 +9,7 @@
         "makeFiles": []
     },
     "installOptions": {
+        "flatpak": "org.ryujinx.Ryujinx",
         "manual": true
     },
     "$schema": "_schema.json"
