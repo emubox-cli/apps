@@ -44,8 +44,10 @@ for (const i of appList) {
         c: appData.consoles,
         o: [],
         e: appData.gameExec,
-        r: appData.romQuery
-    }
+        r: appData.romQuery,
+        f: appData.flags,
+        b: appData.needsBios
+    };
 
     if (appData.installOptions.gitRepo)
         minData.o.push("g");
