@@ -9,6 +9,8 @@ const REQUIRED_KEYS = [
     "romQuery",
     "postInstall",
     "installOptions",
+    "needsBios",
+    "flags",
     "$schema"
 ]
 const data = {
