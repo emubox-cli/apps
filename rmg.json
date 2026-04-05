@@ -1,8 +1,12 @@
 {
     "name": "Rosalie's Mupen GUI",
     "consoles": ["n64"],
-    "gameExec": "-f {}",
+    "gameExec": "{fullscreen} {}",
     "romQuery": ".*(.n64|.N64|.z64|.Z64|.v64|.V64|.ndd|.NDD|.d64|.D64|.zip|.ZIP|.7z|.7Z)",
+    "needsBios": false,
+    "flags": {
+        "fullscreen": "-f"
+    },
     "postInstall": {
         "makeLinks": {},
         "makeDirs": [

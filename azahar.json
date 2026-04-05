@@ -2,6 +2,8 @@
     "name": "Azahar",
     "consoles": ["3ds"],
     "gameExec": "{}",
+    "needsBios": false,
+    "flags": {},
     "romQuery": ".*(.3dsx|.3DSX|.elf|.ELF|.axf|.AXF|.cci|.CCI|.app|.APP|.z3dsx|.Z3DSX|.zcci|.ZCCI|.zcxi|.ZCXI)",
     "postInstall": {
         "makeFiles": [],

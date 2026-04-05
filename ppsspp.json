@@ -1,8 +1,12 @@
 {
     "name": "PPSSPP",
     "consoles": ["psp"],
-    "gameExec": "-f {}",
+    "gameExec": "{fullscreen} {}",
     "romQuery": ".*",
+    "needsBios": false,
+    "flags": {
+        "fullscreen": "-f"
+    },
     "postInstall": {
         "makeLinks": {},
         "makeDirs": [],

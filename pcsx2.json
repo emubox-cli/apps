@@ -1,8 +1,12 @@
 {
     "name": "PCSX2",
     "consoles": ["ps2"],
-    "gameExec": "-fullscreen -- {}",
+    "gameExec": "{fullscreen} -- {}",
     "romQuery": ".*(.bin|.BIN|.chd|.CHD|.cso|.CSO|.dump|.DUMP|.gz|.GZ|.img|.IMG|.iso|.ISO|.mdf|.MDF|.nrg|.NRG)",
+    "needsBios": true,
+    "flags": {
+        "fullscreen": "-fullscreen"
+    },
     "postInstall": {
         "makeLinks": {},
         "makeDirs": [],

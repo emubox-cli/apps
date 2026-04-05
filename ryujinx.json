@@ -2,7 +2,9 @@
     "name": "Ryujinx (Ryubing)",
     "consoles": ["switch"],
     "gameExec": "{}",
-     "romQuery": ".*(.kip|.KIP|.nca|.NCA|.nro|.NRO|.nso|.NSO|.nsp|.NSP|.xci|.XCI)",
+    "romQuery": ".*(.kip|.KIP|.nca|.NCA|.nro|.NRO|.nso|.NSO|.nsp|.NSP|.xci|.XCI)",
+    "needsBios": true,
+    "flags": {},
     "postInstall": {
         "makeLinks": {},
         "makeDirs": [],

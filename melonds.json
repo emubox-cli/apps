@@ -1,8 +1,12 @@
 {
     "name": "MelonDS",
     "consoles": ["nds"],
-    "gameExec": "-f {}",
+    "gameExec": "{fullscreen} {}",
     "romQuery": ".*(.7z|.7Z|.nds|.NDS|.zip|.ZIP)",
+    "needsBios": false,
+    "flags": {
+        "fullscreen": "-f"
+    },
     "postInstall": {
         "makeLinks": {
             

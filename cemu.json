@@ -2,6 +2,8 @@
     "name": "Cemu",
     "consoles": ["wiiu"],
     "gameExec": "-g {}",
+    "needsBios": false,
+    "flags": {},
     "romQuery": ".*(.wud|.WUD|.wux|.WUX|.wua|.WUA|.wuhb|.WUHB|.iso|.ISO|.rpx|.RPX|.elf|.ELF)",
     "postInstall": {
         "makeDirs": [],
