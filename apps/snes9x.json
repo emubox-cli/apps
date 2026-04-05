@@ -3,7 +3,10 @@
     "consoles": ["snes"],
     "gameExec": "{}",
     "romQuery": ".*(.smc|.SMC|.sfc|.SFC|.swc|.SWC)",
+    "needsBios": false,
+    "flags": {},
     "postInstall": {
+        "makeLinks": {},
         "makeDirs": [
             "<config>/snes9x",
             "<save>/snes9x/saves",

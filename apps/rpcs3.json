@@ -3,6 +3,8 @@
     "consoles": ["ps3"],
     "gameExec": "--no-gui {}",
     "romQuery": ".*",
+    "needsBios": true,
+    "flags": {},
     "postInstall": {
         "makeLinks": {},
         "makeDirs": [],

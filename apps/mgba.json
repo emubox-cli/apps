@@ -1,8 +1,12 @@
 {
     "name": "mGBA",
     "consoles": ["gba"],
-    "gameExec": "-f {}",
+    "gameExec": "{fullscreen} {}",
     "romQuery": ".*(.7z|.7Z|.gba|.GBA|.zip|.ZIP)",
+    "needsBios": false,
+    "flags": {
+        "fullscreen": "-f"
+    },
     "postInstall": {
         "makeLinks": {},
         "makeDirs": [

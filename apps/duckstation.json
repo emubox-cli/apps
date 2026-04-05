@@ -1,8 +1,12 @@
 {
     "name": "DuckStation",
     "consoles": ["psx"],
-    "gameExec": "-fullscreen -- {}",
+    "gameExec": "{fullscreen} -- {}",
     "romQuery": ".*(.bin|.BIN|.img|.IMG|.iso|.ISO|.cue|.CUE|.chd|.CHD|.cpe|.CPE|.ecm|.ECM|.mds|.MDS|.pbp|.PBP|.elf|.ELF|.exe|.EXE|.psexe|.PSEXE|.ps-exe|.PS-EXE|.psx|.PSX|.psf|.PSF|.minipsf|.MINIPSF|.m3u|.M3U|.psxgpu|.PSXGPU)",
+    "needsBios": true,
+    "flags": {
+        "fullscreen": "-fullscreen"
+    },
     "postInstall": {
         "makeLinks": {
             "<bios>/<id>": "<config>/duckstation/bios"

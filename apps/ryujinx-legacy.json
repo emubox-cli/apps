@@ -3,6 +3,8 @@
     "consoles": ["switch"],
     "gameExec": "{}",
     "romQuery": ".*",
+    "needsBios": true,
+    "flags": {},
     "postInstall": {
         "makeLinks": {},
         "makeDirs": [],
